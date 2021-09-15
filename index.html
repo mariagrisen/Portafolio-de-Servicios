@@ -5,15 +5,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <style>
+            .imagen:hover {filter: blur(5px);}
+        </style>
+        <style>
+            .contenedor:hover .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}
+            .contenedor {overflow:hidden;}
+        </style>
     </head>
     <body style = "background-color: rgb(243, 219, 243);">
-        <section style="background-color: rgba(245, 89, 136, 0.801);">
+        <header style="background-color: rgba(245, 89, 136, 0.801);">
             <center>
             <h1>DULCES ENCANTOS</h1>
             <p><h4>Disfruta de los más deliciosos postres y dulces de nuestra empresa.</h4></p>
-            <img src = "descargar.jpg">
+            <div class = "contenedor">
+            <img class = "imagen":hover src = "descargar.jpg">
+            </div>
             </center>
-        </section>
+        </header>
         <nav class="menu"><h2><ol>
             <li>Misión</li>
             <li>Visión</li>
